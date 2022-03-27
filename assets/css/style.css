@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+header .logo{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .menu{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .menu-line{
+    height: 3px;
+    background-color: #21295c;
+
+}
+
+
+
+
+.container{
+    display:flex;
+    height: 100vh;
+}
+.container .left-side{
+    flex: 1; 
+    background-color: #21295c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px ;
+}
+.container .rigth-side{
+    flex: 1;
+    background-image: url('../img/29302e4b-7644-465a-97ac-d4031c7c2e30.jpeg');
+    background-size: cover;
+    background-position: center top;
+}
+.container .info{
+    color: #fff;
+}
+.container .info .profession{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.container .info .name{
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.container .info .button a{
+    display: inline-block;
+    background-color: #FFF;
+    color: #72d2e3;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px #333;
+}
+.container .info .button a:hover{
+    opacity: 0.85;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    font-size: 13px;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 820px){
+    
+    header{
+        position: initial;
+        background-color: #21295c;
+    }
+
+
+    .container{
+        flex-direction: column;
+        height: calc(100vh - 63px);
+    }
+    .container .left-side{
+        flex: none;
+        padding: 30px 20px;
+    }
+    .container .rigth-side{
+        background-position: center;
+    }
+
+
+    footer{
+        color: #21295c;
+    }
+    footer a{
+        color: #21295c;
+    }
+
+}
